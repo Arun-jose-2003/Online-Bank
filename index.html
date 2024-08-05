@@ -1,0 +1,242 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank</title>
+    <!-- favicon -->
+     <link rel="icon" type="image/jpg" href="images/logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <style>
+      .container-fluid{
+        width: 100%;
+      }
+      nav ul li:hover {
+          background-color: #fff;
+          color: #4facfe;
+          border-radius: 10px;
+          padding: 10px;
+      }
+      .navbar{
+        background-color: rgb(86, 150, 223);
+        width: 100%;
+        height: 90px;
+        padding: auto;
+      }
+      nav ul{
+        display: flex;
+        
+      }
+      nav ul li{
+        justify-content: space-around;
+        margin: 15px;
+        list-style: none;
+        padding: 15px;
+        color: #fff;
+        font-size: 20px;
+        text-transform: uppercase;
+
+      }
+      .sec2con p{
+        text-align: justify;
+      }
+
+     
+      
+    </style>
+</head>
+<body style=" font-family:'PT Serif', serif;">
+    <nav class="navbar ">
+        <div class="navhead container-fluid">
+          <a class="navbar-brand p-3">  <img src="./images/logo.png" alt="" width="70px" height="70px" class="me-2 pb-2">MY BANK</a>
+         
+          <ul type="none" >
+            <li>home</li>
+            <li>about</li>
+            <li>contact</li>
+            <li>help</li>
+            <li>service</li>
+          </ul>
+          
+          
+          <div class="buttons d-flex">
+          
+            <button class="btn btn-outline-primary me-2" type="button"  onclick="registeruser()"></i>REGISTER</button>
+            <button class="btn btn-outline-primary" type="button"  onclick="loginuser()">LOGIN</button>
+          </div>
+        </div>
+        
+      </nav>
+
+      <section>
+        <div class=" container-fluid">
+            <div class="section1 row d-flex">
+                <div class="sec1con col-6 p-5" >
+                    <h1 class="text-center text-primary mb-3">Online Bank</h1>
+                    <p class="text-justify" style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi error necessitatibus iusto facere aut? Neque eius iste vero dicta maxime sed aliquid explicabo delectus necessitatibus, in, modi consequuntur. Possimus, impedit?
+                    Dicta voluptate accusantium quaerat iure ea saepe ratione error culpa ducimus omnis natus, ullam, ut quae odit repellendus quas sed fugiat eaque magni corporis reprehenderit ipsum? Necessitatibus alias nam minus.
+                    Voluptatem ea, quisquam magni, veritatis suscipit, ad officia velit aliquam animi dolores quam ducimus cumque consequatur debitis placeat? Temporibus quidem repudiandae rem itaque dolore laboriosam minus amet tempore commodi enim?</p>
+                    <button class="btn btn-primary">Get Started</button>
+                </div>
+                <div class="gif1 col-6 mt-3" >
+                    <img class="img img-fluid" src="./images/bankimg3.gif" alt="" width="80%" height="100px" >
+                </div>
+            </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container-fluid">
+          <div class="section2 row d-flex">
+            <div class="sec2gif col-6">
+              <img class="img img-fluid "  src="./images/bankimg1.gif" alt="" width="80%" height="100px">
+            </div>
+            <div class="sec2con col-6 p-2 pe-5">
+              <h1 class="text-center text-primary mb-3">Variety of payment choices</h1>
+              <p class="text-justify" style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto repellat iusto minus, amet debitis, sequi vitae corporis fugit perspiciatis hic veritatis est nisi excepturi nobis cupiditate aliquid neque fugiat totam?
+              Numquam ad nisi quasi sapiente illum velit quaerat minima voluptatum incidunt amet? Corporis modi fuga eaque autem non animi, nisi veritatis ipsa hic consectetur quod quidem totam sapiente labore tempora!</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- Footer -->
+<footer class="text-center text-lg-start bg-body-tertiary text-muted" style="color: blue;">
+  <!-- Section: Social media -->
+  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+    <!-- Left -->
+    <div class="me-5 d-none d-lg-block text-primary">
+      <span>Get connected with us on social networks:</span>
+    </div>
+    <!-- Left -->
+
+    <!-- Right -->
+    <div>
+      <a href="" class="me-4 text-reset-primary-primary ">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="" class="me-4 text-reset-primary">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="" class="me-4 text-reset-primary">
+        <i class="fab fa-google"></i>
+      </a>
+      <a href="" class="me-4 text-reset-primary">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="" class="me-4 text-reset-primary">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="" class="me-4 text-reset-primary">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <!-- Right -->
+  </section>
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            <i class="fas fa-gem me-3 text-primary"></i>MY BANK
+          </h6>
+          <p class="text-primary">
+            Here you can use rows and columns to organize your footer content. Lorem ipsum
+            dolor sit amet, consectetur adipisicing elit.
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4 text-primary">
+            My Bank Provides
+          </h6>
+          <p>
+            <a href="#!" class="text-reset-primary">Services</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset-primary">Connect with us</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset-primary">Gallery</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset-primary">History</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Useful links
+          </h6>
+          <p>
+            <a href="#!" class="text-reset-primary">Pricing</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset-primary">Settings</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset-primary">Orders</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset-primary">Help</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4 text-primary">Contact</h6>
+          <p class="text-primary"><i class="fas fa-home me-3 text-primary"></i> New York, NY 10012, US</p>
+          <p class="text-primary">
+            <i class="fas fa-envelope me-3"></i>
+            info@example.com
+          </p>
+          <p class="text-primary"><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+          <p class="text-primary"><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+    © 2024 Copyright:
+    <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MYbank.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+</body>
+<script src="./script.js">
+
+</script>
+
+</html>
